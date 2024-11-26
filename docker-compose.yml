@@ -6,3 +6,26 @@ services:
       - ~/dockerdata/lamp-www:/var/www/html
     ports:
       - 8080:80
+    networks:
+      - lamp
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - mysql_service
+
+  mysql_service:
+    container_name: lamp-mysql
+    image: mysql:latest
+    environment:
+      - MYSQL_USER=$DB_USER
+      - MYSQL_PASSWORD=$DB_PASS
+      - MYSQL_ROOT_PASSWORD=$DB_ROOT_PASS
+      - MYSQL_DATABASE=$DEFAULT_DB
+    networks:
+      - lamp
+    ports:
+      - 3306:3306
+
+networks:
+  lamp:
+    external: true

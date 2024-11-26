@@ -7,9 +7,6 @@ RUN apt upgrade -y
 # Install Apache Httpd
 RUN apt install apache2 -y
 
-# Install MariaDB
-RUN apt install mariadb-server -y
-
 # Install PHP
 RUN apt install php php-common libapache2-mod-php php-cli php-mysql -y
 
