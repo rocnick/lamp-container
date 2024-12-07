@@ -41,6 +41,6 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/rocnick/lamp-container?tab=MIT-1-ov-file#readme)
 
 Feel free to use this as you see fit.
