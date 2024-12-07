@@ -24,7 +24,7 @@ services:
     networks:
       - lamp
     ports:
-      - 3306:3306
+      - 3310:3306
 
 networks:
   lamp:
