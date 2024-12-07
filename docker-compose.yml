@@ -16,6 +16,7 @@ services:
   mysql_service:
     container_name: lamp-mysql
     image: mysql:latest
+    restart: unless-stopped
     environment:
       - MYSQL_USER=$DB_USER
       - MYSQL_PASSWORD=$DB_PASS
