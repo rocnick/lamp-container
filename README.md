@@ -30,7 +30,6 @@ docker network create lamp
 ./build.sh
 
 docker compose up -d
-
 ```
 
 ## Contributing
@@ -43,3 +42,5 @@ Please make sure to update tests as appropriate.
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+Feel free to use this as you see fit.
