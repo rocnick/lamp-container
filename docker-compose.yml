@@ -1,6 +1,6 @@
 services:
   web-server:
-    image: web-server:latest
+    image: rocnick/web-server:latest
     restart: unless-stopped
     volumes:
       - ~/dockerdata/lamp-www:/var/www/html
