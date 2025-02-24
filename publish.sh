@@ -8,8 +8,6 @@ fi
 
 repo=$1
 
-
-
 docker build -t $repo/web-server:latest -f Dockerfile .
 
 # Tag with a version number if you need to
